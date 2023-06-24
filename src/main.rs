@@ -51,6 +51,7 @@ fn main() {
             handle.join().unwrap();
 
             child.wait().expect("Command wasn't running");
+            return;
         }
     }
     println!("found not task name \"{}\"", args[1]);
