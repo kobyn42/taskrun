@@ -53,6 +53,7 @@ fn main() {
             child.wait().expect("Command wasn't running");
         }
     }
+    println!("found not task name \"{}\"", args[1]);
 }
 
 fn remove_comments(input: &str) -> String {
